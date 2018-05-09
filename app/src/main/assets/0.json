@@ -1,0 +1,48 @@
+{
+"vaccines" : [{"id" : 0, "name" : "Inactivated Influenza Vaccine IM",
+"indication" : "Recommended for all adults<small><sup>1</small></sup>" ,
+ "administration":"One <b>IIV</b> dose every year in the fall or winter<small><sup>2</sup></small>" ,
+ "contrain":"- Previous severe allergic reaction<small><sup>2</small></sup><br>- Moderate or severe acute illness with or without fever<small><sup>2</sup></small>"},
+
+ {"id" : 1, "name" : " Tetanus, diphtheria, pertussis (Td/Tdap) IM",
+"indication" : "All people who lack written documentation of a primary series consisting of at least 3 doses of tetanus- and diphtheria-toxoid-containing vaccine<small><sup>2</small></sup>" ,
+ "administration":"Substitute 1-time dose of Tdap for Td booster; then boost with Td every 10 years<small><sup>1</small></sup>" ,
+ "contrain":"- Previous severe allergic reaction<small><sup>2</small></sup> <br>- For Tdap only, history of encephalopathy not attributable to an identifiable cause, within 7 days following DTP/DTaP, or Tdap<small><sup>2</small></sup>"},
+
+ {"id" : 2 , "name" : "Pneumococcal conjugate (PCV13) IM",
+  "indication" : "Adults with immunocompromising conditions (e.g.Hodgkin disease, lymphoma, leukemia, sickle cell disease) are at higher risk for pneumococcal diseases & their prevention is very important because the infection can lead to death, hospitalization, and serious complications including brain damage, heart attack, hearing loss, or amputations<small><sup>3</small></sup> For all adults aged 19 through 64 years with immunocompromising conditions<small><sup>1</small></sup>" ,
+  "administration":"- Have not received PCV13 or PPSV23: Administer PCV13 followed by PPSV23 at least 8 weeks after PCV13; administer a second dose of PPSV23 at least 5 years after the first dose of PPSV23 <small><sup>1</small></sup><br>- Have not received PCV13 but have received 1 dose of PPSV23: Administer PCV13 at least 1 year after the PPSV23; administer a second dose of PPSV23 at least 8 weeks after PCV13 and at least 5 years after the first dose of PPSV23<br>- Have not received PCV13 but have received 2 doses of PPSV23: Administer PCV13 at least 1 year after the most recent dose of PPSV23<small><sup>1</small></sup><br>- Have received PCV13 but not PPSV23: Administer PPSV23 at least 8 weeks after PCV13; administer a second dose of PPSV23 at least 5 years after the first dose of PPSV23<small><sup>1</small></sup><br>- Have received PCV13 and 1 dose of PPSV23: Administer a second dose of PPSV23 at least 5 years after the first dose of PPSV23<small><sup>1</small></sup>" ,
+  "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components<small><sup>2</small></sup><br>- Moderate or severe acute illness<small><sup>2</small></sup>"},
+
+ {"id" : 3 , "name" : "Pneumococcal polysaccharide (PPSV23) IM or SC",
+  "indication" : "Adults with immunocompromising conditions (e.g.Hodgkin disease, lymphoma, leukemia, sickle cell disease) are at higher risk for pneumococcal diseases & their prevention is very important because the infection can lead to death, hospitalization, and serious complications including brain damage, heart attack, hearing loss, or amputations<small><sup>3</small></sup> For all adults aged 19 through 64 years with immunocompromising conditions<small><sup>1</small></sup>" ,
+  "administration":"- Have not received PCV13 or PPSV23: Administer PCV13 followed by PPSV23 at least 8 weeks after PCV13; administer a second dose of PPSV23 at least 5 years after the first dose of PPSV23 <small><sup>1</small></sup><br>- Have not received PCV13 but have received 1 dose of PPSV23: Administer PCV13 at least 1 year after the PPSV23; administer a second dose of PPSV23 at least 8 weeks after PCV13 and at least 5 years after the first dose of PPSV23<br>- Have not received PCV13 but have received 2 doses of PPSV23: Administer PCV13 at least 1 year after the most recent dose of PPSV23<small><sup>1</small></sup><br>- Have received PCV13 but not PPSV23: Administer PPSV23 at least 8 weeks after PCV13; administer a second dose of PPSV23 at least 5 years after the first dose of PPSV23<small><sup>1</small></sup><br>- Have received PCV13 and 1 dose of PPSV23: Administer a second dose of PPSV23 at least 5 years after the first dose of PPSV23<small><sup>1</small></sup>" ,
+  "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components<small><sup>2</small></sup><br>- Moderate or severe acute illness<small><sup>2</small></sup>"},
+
+ {"id" : 4 , "name" : "Hepatitis A (HepA) IM",
+  "indication" : "For all adults patients with immunocompromising conditions who want to be protected from (HAV) infection if some other risk factor is present<small><sup>1</small></sup>" ,
+  "administration":"2 doses<small><sup>1</small></sup>" ,
+  "contrain":"-Previous severe allergic reaction<small><sup>2</small></sup><br>-Moderate or severe acute illness<small><sup>2</small></sup>"},
+
+ {"id" : 5 , "name" : "Hepatitis B (HepB) IM",
+  "indication" : "For all adult patients with immunocompromising conditions if some other risk factor is present<small><sup>1</small></sup>" ,
+  "administration":"Adult patients with immunocompromising conditions should receive 1 dose of 40 mcg/mL on a 3-dose schedule at 0, 1, and 6 months or 2 doses of 20 mcg/mL administered simultaneously on a 4-dose schedule at 0, 1, 2, and 6 months<small><sup>1</small></sup>" ,
+  "contrain":"-Previous severe allergic reaction<small><sup>2</small></sup><br>-Moderate or severe acute illness<small><sup>2</small></sup>"},
+
+ {"id" : 6 , "name" : "Humanpapillomavirus (HPV) IM",
+  "indication" : "-For unvaccinated females through age 26yrs: Complete a 3-dose series of HPV2 or HPV4<small><sup>2</small></sup><br>-For unvaccinated males age 22 through 26yrs: Complete a 3-dose series of HPV4<small><sup>2</small></sup>" ,
+  "administration":"- 3 doses on a 0, 1–2, 6m schedule. Use either HPV2 or HPV4 for women, and only HPV4 for men<small><sup>2</small></sup><br>- Must be at least 4wks between doses #1 and #2 and at least 12wks between doses #2 and #3 <small><sup>2</small></sup>" ,
+  "contrain":"-Previous severe allergic reaction<small><sup>2</small></sup><br>-Moderate or severe acute illness<small><sup>2</small></sup><br>-Pregnancy<small><sup>2</small></sup>"},
+
+ {"id" : 7 , "name" : "Haemophilus influenzae type b (Hib)",
+  "indication" : "Post-HSCT* recipients only<small><sup>1</small></sup>" ,
+  "administration":"3-dose regimen 6 to 12 months after a successful transplant, regardless of vaccination history; at least 4 weeks should separate doses <small><sup>1</small></sup>" ,
+  "contrain":"-Previous severe allergic reaction<small><sup>2</small></sup><br>-Moderate or severe acute illness<small><sup>2</small></sup>"}]
+
+,"icon" : "sec1logo"
+,"name" : "Immunocompromised Patients"
+,"ref" : "*Hematopoietic stem cell transplant<br>1- Centers for Disease Control and Prevention. Department of Health and Human Services<br>2- Summary of Recommendations for Adult Immunization (Age 19 years and older). Centers for Disease Control and Prevention. 2015<br>3- National Foundation for Infectious Diseases. Available at: http://www.adultvaccination.org/professional-resources/pneumo/certain-medical-conditions-patients.pdf"
+,"bg" : "sec1bg"
+,"btnBg" : "sec1btnbg"
+,"textColor" : "sec1color"
+}

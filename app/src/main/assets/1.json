@@ -1,0 +1,75 @@
+{
+"vaccines" : [{"id" : 0 ,
+  "name" : "Inactivated Influenza (IIV) IM",
+  "indication" : "All persons ≥6 months" ,
+  "administration":"One dose every year, preferred before the winter season",
+  "contrain":"- Previous severe allergic reaction<br> - Moderate or severe acute illness with or without fever"
+},
+
+  {"id" : 1 ,
+    "name" : "Hepatitis B (HepB) IM",
+    "indication" : "All persons with end-stage renal disease, including patients receiving hemodialysis" ,
+    "administration":"Adult patients receiving hemodialysis or with other immunocompromising conditions should receive 2 doses of 20 mcg/mL (Engerix-B) administered simultaneously on a 4-dose schedule at 0, 1, 2, and 6 months ",
+    "contrain":"- Previous severe allergic reaction <br> - Moderate or severe acute illness"
+  },
+
+
+  {"id" : 2 ,
+    "name" : "Pneumococcal conjugate (PCV13) IM",
+    "indication" : "Chronic renal failure and nephrotic syndrome,65 yeas and above,Functional or anatomic asplenia,HIV infection,Leukemia, Lymphoma, generalized malignancy, Immunosupression" ,
+    "administration":"<b>Schedule for dual vaccination</b> - A single dose of PCV13 followed by a dose of PPSV23 ≥8 weeks later should be given for adults with advanced kidney disease who are at any age (including those ≥65 years of age) and who have not previously received either PCV13 or PPSV23.<br> For patients who have previously received one or more doses of PPSV23, a  single dose of PCV13 should be given ≥1 year after the last PPSV23 dose was received.Revaccination with PPSV23 >5 year in immunocompromised and at 65 years old. ",
+    "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components<br> - Moderate or severe acute illness"
+  },
+
+
+  {"id" : 3 ,
+    "name" : "Pneumococcal polysaccharide (PPSV23) IM or SC",
+    "indication" : "All chronic kidney diseases patients " ,
+    "administration":"<b>Schedule for dual vaccination</b> - A single dose of PCV13 followed by a dose of PPSV23 ≥8 weeks later should be given for adults with advanced kidney disease who are at any age (including those ≥65 years of age) and who have not previously received either PCV13 or PPSV23.<br> For patients who have previously received one or more doses of PPSV23, a  single dose of PCV13 should be given ≥1 year after the last PPSV23 dose was received.Revaccination with PPSV23 >5 year in immunocompromised and at 65 years old.",
+    "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components<br> - Moderate or severe acute illness"
+  },
+
+  {"id" : 4 ,
+    "name" : "Hepatitis A (HepA) IM",
+    "indication" : "All adults seeking protection from (HAV) infection and persons with other risk factors" ,
+    "administration":"2 dose schedule with a minimum of 6 month interval",
+    "contrain":"- Previous severe allergic reaction<br> - Moderate or severe acute illness"
+  },
+
+  {"id" : 5 ,
+    "name" : "Tetanus, diphtheria, acellular pertussis (Td/Tdap) IM",
+    "indication" : "All people who lack written documentation of a primary series consisting of at least 3 doses of tetanus- and diphtheria-toxoid-containing vaccine" ,
+    "administration":"Substitute 1-time dose of Tdap for Td booster; then boost with Td every 10 yrs",
+    "contrain":"- Previous severe allergic reaction<br> - For Tdap only, history of encephalopathy not attributable to an identifiable cause, within 7d following DTP/DTaP, or Tdap"
+  },
+
+
+  {"id" : 6 ,
+    "name" : "Measles, mumps, rubella (MMR) SC",
+    "indication" : "Individuals at higher risk of either exposure or morbidity e.g., Healthcare personnel, college students, Military personnel, international travelers, Household and close contacts of immunocompromised persons, HIV-infected individuals who do not have current evidence of severe immunosuppression" ,
+    "administration":"- Individuals at high risk should have two doses separated by at least one month or serologic evidence of immunity.<br> - Adults with no evidence of immunity should get 1 dose of MMR unless the adult is in a high risk group.",
+    "contrain":"- Previous severe allergic reaction<br> - Pregnancy or possibility of pregnancy within 4wks<br> - Immunocompromising conditions<br> - Severe immunodeficiency<br> - History of thrombocytopenia or thrombocytopenic purpura"
+  },
+
+
+  {"id" : 7 ,
+    "name" : "Zoster (shingles) SC",
+    "indication" : "Adults aged 60 years or older regardless of whether they report a prior episode of herpes zoster" ,
+    "administration":"1 dose",
+    "contrain":"- Previous severe allergic reaction<br> - Primary cellular or acquired immunodeficiency<br> - Pregnancy<br> - Receipt of specific antivirals 24hrs before vaccination<br> - Moderate or severe acute illness"
+  },
+
+
+  {"id" : 8 ,
+    "name" : "Varicella (chickenpox) SC",
+    "indication" : "All adults without evidence of immunity to varicella<small><sup>**</small></sup>" ,
+    "administration":"- 2 doses<br> - Dose #2 is given 4—8wks after dose #1.<br> - If dose #2 is delayed, do not repeat dose #1, just give dose #2.",
+    "contrain":"- Previous severe allergic reaction (e.g. anaphylaxis) - <br> - Pregnancy <br> - Long-term immunosuppressive therapy or immunocompromised pts<br> - Receipt of specific antivirals<br> - Moderate or severe acute illness"
+  }]
+,"icon" : "sec2logo"
+,"name" : "Kidney Diseases"
+,"ref" : "* No specific ACIP recommendation for this vaccine exists for dialysis patients or patients with chronic kidney disease **Evidence of immunity to varicella in adults includes any of the following:=<br>- Documentation of 2 doses of varicella vaccine at least 4 weeks apart;<br>- History of varicella based on diagnosis or verification of varicella disease by a health care provider;<br>- History of herpes zoster based on diagnosis or verification of herpes zoster disease by a health care provider; <br>- Laboratory evidence of immunity or laboratory confirmation of disease.<br>Centers for Disease Control and Prevention (CDC). Advisory Committee on Immunization Practices Recommended Immunization Schedule for Adults Aged 19 Years or Older — United States, 2016. MMWR Morb Mortal Weekly / February 5, 2016/ 65(4); 88–90"
+,"bg" : "sec2bg"
+,"btnBg" : "sec2btnbg"
+,"textColor" : "sec2color"
+}
