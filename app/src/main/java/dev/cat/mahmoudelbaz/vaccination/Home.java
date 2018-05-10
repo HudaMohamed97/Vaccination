@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -36,6 +38,8 @@ public class Home extends AppCompatActivity {
     ImageView bottomHome,homeBg;
     SharedPreferences shared;
     private int READ_STORAGE_PERMISSION_REQUEST_CODE = 100;
+    private static final String AUTHORITY="dev.cat.mahmoudelbaz.vaccination";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +84,10 @@ public class Home extends AppCompatActivity {
                     myEdit.commit();
                 startActivity(intent);
                 }
+
+                else if (vaccines.get(i).getId() == 7)
+                    LoadPdfFile("NationalGuardmission");
+
             }
         });
 
@@ -94,55 +102,13 @@ public class Home extends AppCompatActivity {
                     }
 
 
-                openPDFFiles("AdultImmunizationGuidelines.pdf");
+                LoadPdfFile("AdultImmunizationGuidelines");
             }
         });
     }
 
-    private void openPDFFiles(String fileName) //fileName is the pdf file name which is keep in assets folder. ex file.pdf
-    {
-        AssetManager assetManager = getAssets();
 
-        InputStream in = null;
-        OutputStream out = null;
-        File file = new File(getFilesDir(), "");
-        try {
-            in = assetManager.open(fileName);
-            out = openFileOutput(file.getName(), MODE_PRIVATE);
 
-            copyFile(in, out);
-            in.close();
-            in = null;
-            out.flush();
-            out.close();
-            out = null;
-        } catch (Exception e) {
-            Log.e("tag", e.getMessage());
-        }
-        try {
-
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setDataAndType(Uri.parse("file://" + getFilesDir() + "/"+fileName), "application/pdf");
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }catch (RuntimeException ex){
-            Toast.makeText(getApplicationContext() , "There's no PDF Reader found in your device", Toast.LENGTH_SHORT).show();
-            Log.d("", "openPDFFiles: " , ex);
-        }
-
-    }
-
-    private void copyFile(InputStream in, OutputStream out) throws IOException
-
-    {
-        byte[] buffer = new byte[1024];
-        int read;
-        while ((read = in.read(buffer)) != -1)
-
-        {
-            out.write(buffer, 0, read);
-        }
-    }
 
     public boolean checkPermissionForReadExtertalStorage() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -160,6 +126,44 @@ public class Home extends AppCompatActivity {
             e.printStackTrace();
             throw e;
         }
+    }
+
+
+    static private void copy(InputStream in, File dst) throws IOException {
+        FileOutputStream out=new FileOutputStream(dst);
+        byte[] buf=new byte[1024];
+        int len;
+
+        while ((len=in.read(buf)) > 0) {
+            out.write(buf, 0, len);
+        }
+
+        in.close();
+        out.close();
+    }
+
+    private  void LoadPdfFile(String fileName){
+
+        File f = new File(getFilesDir(), fileName + ".pdf");
+
+
+            AssetManager assets=getAssets();
+            try {
+                copy(assets.open(fileName + ".pdf"), f);
+            }
+            catch (IOException e) {
+                Log.e("FileProvider", "Exception copying from assets", e);
+            }
+
+
+        Intent i=
+                new Intent(Intent.ACTION_VIEW,
+                        FileProvider.getUriForFile(this, AUTHORITY, f));
+
+        i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+
+        startActivity(i);
+        finish();
     }
 
 }
