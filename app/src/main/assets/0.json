@@ -1,6 +1,6 @@
 {
 "vaccines" : [{"id" : 0, "name" : "Inactivated Influenza Vaccine IM",
-"indication" : "Recommended for all adults<small><sup>1</small></sup>" ,
+"indication" : "Recommended for all adults with HIV<small><sup>1</small></sup>" ,
  "administration":"One <b>IIV</b> dose every year in the fall or winter<small><sup>2</sup></small>" ,
  "contrain":"- Previous severe allergic reaction<small><sup>2</small></sup><br>- Moderate or severe acute illness with or without fever<small><sup>2</sup></small>"},
 

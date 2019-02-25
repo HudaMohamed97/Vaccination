@@ -1,6 +1,6 @@
 {
 "vaccines" : [{"id" : 0 ,
-  "name" : "Influenza IM or ID (intradermal) ",
+  "name" : "Inactivated Influenza (IIV).<br>IM ",
   "indication" : "Recommended for all adults" ,
   "administration":"One <b>IIV</b> dose every year in the fall or winter",
   "contrain":"- Previous severe allergic reaction <br> - Moderate or severe acute illness with or without fever"
@@ -54,10 +54,10 @@
   },
 
   {"id" : 7 ,
-    "name" : "Zoster (shingles) SC",
-    "indication" : "Recommended for adults aged 60 years or older regardless of whether they report a prior episode of herpes zoster" ,
-    "administration":"1 dose",
-    "contrain":"- Previous severe allergic reaction<br> - Primary cellular or acquired immunodeficiency<br> - Pregnancy<br> - Receipt of specific antivirals 24hrs before vaccination (i.e., acyclovir, famciclovir, or valacyclovir) 24hrs before vaccination, if possible; delay resumption of these antiviral drugs for 14d after vaccination<br> - Moderate or severe acute illness"
+    "name" : "Zoster (shingles) ",
+    "indication" : "Recommended for -Shingrix (RZV) for adults ≥ 50 years. (IM) (Preferred)<br>-Zostavax (ZVL) for adults ≥ 60 years (SC).<br>-Whether Patients have a history of varicella or herpes zoster." ,
+    "administration":"-Shingrix (RZV) 2 doses, 2-6 months apart.<br>-Zostavax (ZVL), 1 dose.",
+    "contrain":"-Shingrix (RZV) Patient with a known allergy to component of vaccine.<br>-Zostavax (ZVL) Previous severe allergic reaction primary cellular or acquired immunodeficiency.<br>-Pregnancy.<br>-Receipt of specific antivirals 24 hrs before vaccination.<br>-Moderate to severe acute illness."
   },
 
   {"id" : 8 ,
@@ -69,10 +69,9 @@
 
   {"id" : 9 ,
     "name" : "Human papillomavirus (HPV) IM",
-    "indication" : "- For unvaccinated females through age 26yrs: Complete a 3-dose series of HPV2 or HPV4	<br> - For unvaccinated males through age 21yrs: Complete a 3-dose series of HPV4" ,
+    "indication" : "-For unvaccinated females through age 26yrs: Complete a 3-dose series of HPV2 or HPV4<br> For unvaccinated males through age 21yrs: Complete a 3-dose series of HPV4",
     "administration":"- 3 doses on a 0, 1–2, 6m schedule. Use either HPV2 or HPV4 for women, and only HPV4 for men <br> - Must be at least 4wks between doses #1 and #2 and at least 12wks between doses #2 and #3 ",
-    "contrain":"- Previous severe allergic reaction <br> - Moderate or severe acute illness <br> - Pregnancy"
-  }]
+    "contrain":"- Previous severe allergic reaction <br> - Moderate or severe acute illness <br> -Pregnancy"}]
 ,"icon" : "sec9logo"
 ,"name" : "Chronic Liver Diseases"
 ,"ref" : "*Evidence of immunity to varicella in adults includes any of the following:<br>- Documentation of 2 doses of varicella vaccine at least 4 weeks apart;<br>- History of varicella based on diagnosis or verification of varicella disease by a health care provider;<br>- History of herpes zoster based on diagnosis or verification of herpes zoster disease by a health care provider; <br>- Laboratory evidence of immunity or laboratory confirmation of disease.<br>1- Centers for Disease Control and Prevention. Department of Health and Human Services<br>2- Summary of Recommendations for Adult Immunization (Age 19 years and older). Centers for Disease Control and Prevention. 2015"

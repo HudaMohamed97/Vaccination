@@ -45,10 +45,10 @@
 
 
   {"id" : 6 ,
-    "name" : "Zoster (shingles) SC",
-    "indication" : "Adults aged 60 years or older regardless of whether they report a prior episode of herpes zoster " ,
-    "administration":"1 dose" ,
-    "contrain":"- Previous severe allergic reaction<br> - Primary cellular or acquired immunodeficiency <br> - Pregnancy <br> - Receipt of specific antivirals 24hrs before vaccination <br> - Moderate or severe acute illness"
+    "name" : "Zoster (shingles) ",
+    "indication" : "-Shingrix (RZV) for adults ≥ 50 years. (IM) (Preferred)<br>-Zostavax (ZVL) for adults ≥ 60 years (SC).<br>-Whether Patients have a history of varicella or herpes zoster." ,
+    "administration":"-Shingrix (RZV) 2 doses, 2-6 months apart.<br>-Zostavax (ZVL), 1 dose." ,
+    "contrain":"-Shingrix (RZV) Patient with a known allergy to component of vaccine.<br>-Zostavax (ZVL) Previous severe allergic reaction primary cellular or acquired immunodeficiency.<br>-Pregnancy.<br>-Receipt of specific antivirals 24 hrs before vaccination.<br>-Moderate to severe acute illness."
   },
 
 

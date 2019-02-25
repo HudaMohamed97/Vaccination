@@ -1,6 +1,6 @@
 {
 "vaccines" : [{"id" : 0 ,
-  "name" : "Influenza IM or ID (intradermal)",
+  "name" : "Inactivated Influenza (IIV).<br>IM",
   "indication" : "Recommended for all adults" ,
   "administration":"One <b>IIV</b> dose every year in the fall or winter",
   "contrain":"- Previous severe allergic reaction <br> - Moderate or severe acute illness with or without fever"
@@ -16,8 +16,8 @@
   {"id" : 2 ,
     "name" : "Pneumococcal conjugate (PCV13)IM",
     "indication" : "For all adults with chronic heart and lung diseases if some other risk factor is present: Age ≥65 years, Cerebrospinal fluid leak, Cochlear implant, Functional or anatomic asplenia, hemoglobinopathies, HIV infection, Chronic renal failure  and Nephrotic syndrome, Leukemia, Lymphoma, generalized malignancy, immunosuppression" ,
-    "administration":"Schedule for dual vaccination - A single dose of PCV13 followed by a dose of PPSV23 ≥8 weeks later should be given for adults with heart disease who are ≥65 years or have any of the risk factors (mentioned before) and who have not previously received either PCV13 or PPSV23. \n For patients who have previously received one or more doses of PPSV23, a  single dose of PCV13 should be given ≥1 year after the last PPSV23 dose was received.Revaccination with single dose of PPSV23 >5 year in immunocompromised and at 65 years old.",
-    "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components \n - Moderate or severe acute illness"
+    "administration":"Schedule for dual vaccination - A single dose of PCV13 followed by a dose of PPSV23 ≥8 weeks later should be given for adults with heart disease who are ≥65 years or have any of the risk factors (mentioned before) and who have not previously received either PCV13 or PPSV23. <br> For patients who have previously received one or more doses of PPSV23, a  single dose of PCV13 should be given ≥1 year after the last PPSV23 dose was received.Revaccination with single dose of PPSV23 >5 year in immunocompromised and at 65 years old.",
+    "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components <br> - Moderate or severe acute illness"
   },
 
 
@@ -25,7 +25,7 @@
     "name" : "Pneumococcal polysaccharide (PPSV23) IM or SC",
     "indication" : "Chronic heart disease, including heart failure and cardiomyopathy Chronic lung disease, including asthma and COPD" ,
     "administration":"2 doses for adults aged 19 through 64 years with chronic heart disease (including congestive heart failure and cardiomyopathies, excluding hypertension), 5 years apart. ",
-    "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components \n - Moderate or severe acute illness"
+    "contrain":"- Previous severe allergic reaction to this vaccine, including (for PCV13) to any diphtheria toxoid-containing vaccine, or to any of its components <br> - Moderate or severe acute illness"
   },
 
 
@@ -52,10 +52,10 @@
   },
 
   {"id" : 7 ,
-    "name" : "Zoster (shingles) SC",
-    "indication" : "Adults aged 60 years or older regardless of whether they report a prior episode of herpes zoster " ,
-    "administration":"1 dose",
-    "contrain":"- Previous severe allergic reaction <br> - Primary cellular or acquired immunodeficiency<br> - Pregnancy <br> - Receipt of specific antivirals 24hrs before vaccination <br> - Moderate or severe acute illness"
+    "name" : "Zoster (shingles) ",
+    "indication" : "-Shingrix (RZV) for adults ≥ 50 years. (IM) (Preferred)<br>-Zostavax (ZVL) for adults ≥ 60 years (SC).<br>-Whether Patients have a history of varicella or herpes zoster." ,
+    "administration":"-Shingrix (RZV) 2 doses, 2-6 months apart.<br>-Zostavax (ZVL), 1 dose.",
+    "contrain":"-Shingrix (RZV) Patient with a known allergy to component of vaccine.<br>-Zostavax (ZVL) Previous severe allergic reaction primary cellular or acquired immunodeficiency.<br>-Pregnancy.<br>-Receipt of specific antivirals 24 hrs before vaccination.<br>-Moderate to severe acute illness."
   },
 
 

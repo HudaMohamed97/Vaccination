@@ -1,6 +1,6 @@
 {
 "vaccines" : [{"id" : 0 ,
-  "name" : "Influenza IM or ID (intradermal)",
+  "name" : "Inactivated Influenza (IIV).<br>IM",
   "indication" : "Recommended for all adults with HIV" ,
   "administration":"One <b>IIV</b> dose every year in the fall or winter",
   "contrain":"- Previous severe allergic reaction<br> - Moderate or severe acute illness with or without fever"
@@ -8,7 +8,7 @@
 
 
   {"id" : 1 ,
-    "name" : "Tetanus, diphtheria, pertussis (Td/Tdap)	IM",
+    "name" : "Tetanus, diphtheria, pertussis (Td/Tdap)  IM",
     "indication" : "All people who lack written documentation of a primary series consisting of at least 3 doses of tetanus- and diphtheria-toxoid-containing vaccine" ,
     "administration":"Substitute 1-time dose of Tdap for Td booster; then boost with Td every 10 yrs",
     "contrain":"- Previous severe allergic reaction<br> - For Tdap only, history of encephalopathy not attributable to an identifiable cause, within 7d following DTP/DTaP or Tdap"

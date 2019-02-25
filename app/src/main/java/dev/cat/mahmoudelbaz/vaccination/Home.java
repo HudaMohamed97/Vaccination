@@ -86,7 +86,7 @@ public class Home extends AppCompatActivity {
                 }
 
                 else if (vaccines.get(i).getId() == 7)
-                    LoadPdfFile("NationalGuardmission");
+                    LoadPdfFile("Ministry of National Guard Health affairs");
 
             }
         });
@@ -144,7 +144,7 @@ public class Home extends AppCompatActivity {
 
     private  void LoadPdfFile(String fileName){
 
-        File f = new File(getFilesDir(), fileName + ".pdf");
+     /*   File f = new File(getFilesDir(), fileName + ".pdf");
 
 
             AssetManager assets=getAssets();
@@ -154,16 +154,19 @@ public class Home extends AppCompatActivity {
             catch (IOException e) {
                 Log.e("FileProvider", "Exception copying from assets", e);
             }
+*/
 
-
-        Intent i=
-                new Intent(Intent.ACTION_VIEW,
-                        FileProvider.getUriForFile(this, AUTHORITY, f));
+       /* Intent i=
+                new Intent(Intent.ACTION_VIEW, FileProvider.getUriForFile(this, AUTHORITY, f));
 
         i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
         startActivity(i);
-        finish();
+        finish();*/
+
+        Intent myIntent = new Intent(Home.this, pdfviewer.class);
+        myIntent.putExtra("key", fileName); //Optional parameters
+        Home.this.startActivity(myIntent);
     }
 
 }
