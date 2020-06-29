@@ -35,10 +35,10 @@ public class Home extends AppCompatActivity {
     ArrayList<Vaccine_item> vaccines = new ArrayList<Vaccine_item>();
     GridView list;
     VaccineAdapter adapter;
-    ImageView bottomHome,homeBg;
+    ImageView bottomHome, homeBg;
     SharedPreferences shared;
     private int READ_STORAGE_PERMISSION_REQUEST_CODE = 100;
-    private static final String AUTHORITY="dev.cat.mahmoudelbaz.vaccination";
+    private static final String AUTHORITY = "dev.cat.mahmoudelbaz.vaccination";
 
 
     @Override
@@ -56,36 +56,32 @@ public class Home extends AppCompatActivity {
         Picasso.with(getApplicationContext()).load(R.drawable.main).fit().centerCrop().into(homeBg);
 
 
-
-
         list = (GridView) findViewById(R.id.vaccinesgridView);
 
-        vaccines.add(new Vaccine_item(0, "", R.drawable.sec1,R.color.sec1color));
-        vaccines.add(new Vaccine_item(1, "", R.drawable.sec2,R.color.sec1color));
-        vaccines.add(new Vaccine_item(2, "", R.drawable.sec3,R.color.sec1color));
-        vaccines.add(new Vaccine_item(3, "", R.drawable.sec4,R.color.sec1color));
-        vaccines.add(new Vaccine_item(4, "", R.drawable.sec5,R.color.sec1color));
-        vaccines.add(new Vaccine_item(5, "", R.drawable.sec6,R.color.sec1color));
-        vaccines.add(new Vaccine_item(6, "", R.drawable.sec7,R.color.sec1color));
-        vaccines.add(new Vaccine_item(7, "", R.drawable.sec8,R.color.sec1color));
-        vaccines.add(new Vaccine_item(8, "", R.drawable.sec9,R.color.sec1color));
+        vaccines.add(new Vaccine_item(0, "", R.drawable.sec1, R.color.sec1color));
+        vaccines.add(new Vaccine_item(1, "", R.drawable.sec2, R.color.sec1color));
+        vaccines.add(new Vaccine_item(2, "", R.drawable.sec3, R.color.sec1color));
+        vaccines.add(new Vaccine_item(3, "", R.drawable.sec4, R.color.sec1color));
+        vaccines.add(new Vaccine_item(4, "", R.drawable.sec5, R.color.sec1color));
+        vaccines.add(new Vaccine_item(5, "", R.drawable.sec6, R.color.sec1color));
+        vaccines.add(new Vaccine_item(6, "", R.drawable.sec7, R.color.sec1color));
+        vaccines.add(new Vaccine_item(7, "", R.drawable.sec8, R.color.sec1color));
+        vaccines.add(new Vaccine_item(8, "", R.drawable.sec9, R.color.sec1color));
 
-        adapter = new VaccineAdapter(Home.this, vaccines);
+        adapter = new VaccineAdapter("", true, Home.this, vaccines);
         list.setAdapter(adapter);
 
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (vaccines.get(i).getId()!=7){
-                Intent intent = new Intent(Home.this,Vaccine_details.class);
+                if (vaccines.get(i).getId() != 7) {
+                    Intent intent = new Intent(Home.this, Vaccine_details.class);
                     SharedPreferences.Editor myEdit = shared.edit();
                     myEdit.putInt("vaccineId", vaccines.get(i).getId());
                     myEdit.commit();
-                startActivity(intent);
-                }
-
-                else if (vaccines.get(i).getId() == 7)
+                    startActivity(intent);
+                } else if (vaccines.get(i).getId() == 7)
                     LoadPdfFile("Ministry of National Guard Health affairs");
 
             }
@@ -108,8 +104,6 @@ public class Home extends AppCompatActivity {
     }
 
 
-
-
     public boolean checkPermissionForReadExtertalStorage() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             int result = getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE);
@@ -130,11 +124,11 @@ public class Home extends AppCompatActivity {
 
 
     static private void copy(InputStream in, File dst) throws IOException {
-        FileOutputStream out=new FileOutputStream(dst);
-        byte[] buf=new byte[1024];
+        FileOutputStream out = new FileOutputStream(dst);
+        byte[] buf = new byte[1024];
         int len;
 
-        while ((len=in.read(buf)) > 0) {
+        while ((len = in.read(buf)) > 0) {
             out.write(buf, 0, len);
         }
 
@@ -142,7 +136,7 @@ public class Home extends AppCompatActivity {
         out.close();
     }
 
-    private  void LoadPdfFile(String fileName){
+    private void LoadPdfFile(String fileName) {
 
      /*   File f = new File(getFilesDir(), fileName + ".pdf");
 
